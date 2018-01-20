@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/**
+ * 小米商城的首页
+ */
+html, body, tb, tr, tl, h1, h2, h3, h4, h5, h6, dd, dr, dl, input, img, label {
+  padding: 0;
+  margin: 0;
+  font-size: 16px; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+a {
+  text-decoration: none;
+  text-align: center; }
+
+body {
+  background: #fff; }
+
+.site-topbar {
+  height: 40px;
+  background: #333;
+  font-size: 12px;
+  line-height: 40px; }
+  .site-topbar a {
+    color: #b0b0b0; }
+  .site-topbar span {
+    color: #424242;
+    vertical-align: middle;
+    margin: 0 10px; }
+  .site-topbar .container {
+    margin: 0 auto;
+    width: 1226px; }
+    .site-topbar .container a:hover {
+      color: white; }
+    .site-topbar .container .topbar-nav {
+      height: 40px;
+      width: auto;
+      float: left; }
+    .site-topbar .container .topbar-char {
+      margin-left: 25px;
+      float: right;
+      height: 40px;
+      width: 120px;
+      background: #ff6700;
+      color: #fff;
+      text-align: center;
+      line-height: 40px; }
+      .site-topbar .container .topbar-char i {
+        font-size: 20px; }
+      .site-topbar .container .topbar-char span {
+        color: #fff;
+        display: inline; }
+    .site-topbar .container .topbar-info {
+      float: right;
+      height: 40px;
+      width: auto; }
+
+/**
+ * 网站头部的信息
+ */
+.home {
+  width: 100%;
+  background: #fff;
+  /**
+	 * 页面的轮播图区域
+	 */ }
+  .home .site-header {
+    margin: 0 auto;
+    width: 1226px;
+    height: 100px;
+    background: url("../img/logo-footer.png") no-repeat 15px;
+    position: relative; }
+    .home .site-header .header-nav {
+      position: absolute;
+      width: 850px;
+      height: 100px;
+      left: 240px; }
+      .home .site-header .header-nav a {
+        line-height: 100px;
+        margin-right: 20px;
+        color: #332e35;
+        font-size: 16px; }
+      .home .site-header .header-nav a:hover {
+        color: #ff6700; }
+    .home .site-header .header-search {
+      line-height: 100px; }
+  .home .home-container {
+    margin: 0 auto;
+    width: 1226px; }
+    .home .home-container .home-slide {
+      height: 460px;
+      background: pink; }
+    .home .home-container .home-product {
+      margin-top: 15px;
+      height: 170px;
+      background: green; }
+
+/**
+ * 页面主要的产品展示
+ */
+.page-main {
+  width: 100%;
+  background: #f5f5f5;
+  /*
+	*为你推荐
+	*/ }
+  .page-main .page-siglePro {
+    background: #fff;
+    height: 460px; }
+  .page-main .page-homeAppliances, .page-main .page-capacity, .page-main .page-match, .page-main .page-accessories, .page-main .page-circum {
+    height: 742px; }
+  .page-main .page-recommend {
+    margin: 0 auto;
+    width: 1226px;
+    height: 400px; }
+  .page-main header {
+    margin: 0 auto;
+    width: 1226px;
+    font-weight: 350;
+    font-size: 20px;
+    line-height: 58px; }
+  .page-main .allProducts {
+    margin: 0 auto;
+    width: 1226px;
+    height: 100%; }
+    .page-main .allProducts .left {
+      width: 234px;
+      height: 641px;
+      background: pink;
+      float: left; }
+    .page-main .allProducts .right {
+      height: 641px;
+      width: 992px;
+      background: #f5f5f5;
+      float: right; }
+  .page-main :nth-child(7) {
+    height: 400px;
+    overflow: hidden; }
+  .page-main :nth-child(8) {
+    height: 400px;
+    overflow: hidden; }
+  .page-main :nth-child(9) {
+    height: 400px;
+    overflow: hidden; }
+  .page-main :nth-child(10) {
+    height: 400px;
+    overflow: hidden; }
+
+.page-main :nth-child(0) {
+  position: relative; }
+
+.page-main :nth-child(1) {
+  position: relative; }
+
+.page-main :nth-child(2) {
+  position: relative; }
+
+.page-main :nth-child(3) {
+  position: relative; }
+
+.page-main :nth-child(4) {
+  position: relative; }
+
+.page-main :nth-child(5) {
+  position: relative; }
+
+.page-main :nth-child(6) {
+  position: relative; }
+
+/**
+ * 页面的底部信息
+ */
+footer {
+  clear: both;
+  width: 100%;
+  background: black;
+  margin-top: 60px; }
+  footer .footer-one {
+    margin: 0 auto;
+    width: 1226px;
+    height: 272px;
+    background: green; }
+  footer .footer-two {
+    margin: 0 auto;
+    width: 1226px;
+    height: 166px;
+    background: blue; }
