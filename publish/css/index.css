@@ -1,0 +1,48 @@
+html, body, div, td, tr, th, ul, li, ol, input, span, img, table, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0; }
+
+ul, li {
+  list-style: none; }
+
+html, body {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  overflow-y: auto; }
+
+.left_nav {
+  display: flex;
+  width: 230px;
+  height: auto;
+  color: white;
+  background: black;
+  font-size: 16px;
+  overflow-y: auto; }
+
+.right_body {
+  flex: 1;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  background: #fff;
+  overflow-y: auto; }
+  .right_body .card {
+    width: 1006px;
+    height: auto;
+    background: #f9f9f9;
+    margin: 20px auto;
+    border-radius: 5px;
+    text-align: center; }
+    .right_body .card .cell_4 {
+      float: left;
+      width: 23%;
+      height: 102px;
+      line-height: 102px;
+      margin: 1%;
+      background: white;
+      border-radius: 5px; }
