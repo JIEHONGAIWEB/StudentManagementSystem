@@ -38,7 +38,7 @@ function getInfo(data){
 				
 			for(let j=0;j<data[i]["panel_body"].length;j++){
 				
-				$(".card").eq(i).find("li").eq(j).append("<img /> <span>"+data[i]["panel_body"][j][0]["title"]+"</span> <p>"+ data[i]["panel_body"][j][0]["info"] +"</p> <span>"+data[i]["panel_body"][j][0]["eye_number"]+"</span> <span>"+data[i]["panel_body"][j][0]["praise"]+"</span>");
+				$(".card").eq(i).find("li").eq(j).append("<img /> <span>"+data[i]["panel_body"][j][0]["title"]+"</span> <p>"+ data[i]["panel_body"][j][0]["info"] +"</p> <span><i class='czs-eye-l'></i>"+data[i]["panel_body"][j][0]["eye_number"]+"</span> <span><i class='czs-thumbs-up-l'></i>"+data[i]["panel_body"][j][0]["praise"]+"</span>");
 				$(".card").eq(i).find("li").find("img").eq(j).attr("src","http://www.chuangzaoshi.com/"+data[i]["panel_body"][j][0]["imgTitle_icon"]);
 					
 

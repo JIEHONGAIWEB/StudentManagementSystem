@@ -3,9 +3,14 @@ const chuangzaoshi = mongoose.createConnection("localhost","chuangzaoshi");
 
 //1、创建自己的模板
 //模板的创建非常的重要，应该怎么创建？？
+/**
+ * 创建模板的时候，最重要的事情，就是需要在模板中定义好自己的数据类型
+ */
 
 let designsSchema = new mongoose.Schema(
+	//json数组的格式
 [ { panel_title: String,panel_body: Object},
+	
   { panel_title: String,panel_body: Object},
 
   { panel_title: String,panel_body: Object},

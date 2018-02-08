@@ -1,0 +1,72 @@
+html,body{
+	height:100%;
+}
+body{
+	background:url(../images/login_bg.jpg) no-repeat center;
+	background-size:100% 100%;
+	overflow:hidden;
+}
+
+#regDom{
+	width:320px;
+	height:500px;
+	margin:136px auto ;
+	background:#ffffff;
+	padding-top:25px;
+	box-shadow:10px 10px 5px 6a7981;
+	position:relative;
+
+	img{
+		position:absolute;
+		top:-100px;
+		left:50px;
+	}
+	span:nth-child(2),span:nth-child(3){
+		    width: 34px;
+		    height: 34px;
+		    border-radius: 40px;
+		    background-color: #472D20;
+		    transform: scaleY(0.6);
+		    transition: all 0.3s ease-out 0s;
+		    position:absolute;
+	}
+	span:nth-child(2){
+		    left:60px;
+		    top:-20px;
+	}
+	span:nth-child(3){
+		    right:60px;
+		    top:-20px;
+	}
+
+}
+
+form{
+	label{
+		width:272px;
+		height:24px;
+		line-height:24px;
+		font-size:14px;
+		display:block;
+		color:#73777b;
+		margin:0 auto;
+	}
+	input{
+		width:272px;
+		height:38px;
+		display:block;
+		border:1px solid #ddd;
+		background:#fbfbfb;
+		margin:auto;
+		margin-bottom:20px;
+	}
+	input:last-child{
+		background:#3983b5;
+		color:#fff;
+		border-radius:10px;
+		border-style:none;
+		font-size:16px;
+
+	}
+	
+}

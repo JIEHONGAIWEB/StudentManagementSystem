@@ -9,6 +9,8 @@ router.get('/', function(req, res, next) {
 
 
 	operatesDbConne.find((data)=>{
+		//前端请求数据,向前端响应需要的数据
+		
   		res.send(data);
 	});
 });
