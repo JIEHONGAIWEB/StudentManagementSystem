@@ -21,16 +21,7 @@ const server = http.createServer((request,response)=>{
 		//
 			//处理请求（查找router中对应的处理函数，进行处理）
 			router[ext](pathname,request,response);
-
-		
-
 	}
-
-
-	
-	
-	
-	
 
 });
 

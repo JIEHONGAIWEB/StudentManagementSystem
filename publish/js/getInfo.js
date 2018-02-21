@@ -1,9 +1,7 @@
 //本模板主要完成的是，进行数据的获取，然后先存入自己的数据库中
 const http = require("http");
 const cheerio = require("cheerio");
-const dbconne = require("./dbconne");
-
-
+const designsDbConne = require("./designsDbConne");
 
 http.get("http://www.chuangzaoshi.com/operate",(res)=>{
 	let html ='';

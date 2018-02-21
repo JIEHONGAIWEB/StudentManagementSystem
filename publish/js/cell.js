@@ -1,7 +1,5 @@
 
 	class cell_Card{
-
-
         constructor(obj){
             let defalutObj = {
                 //盒子默认的样式

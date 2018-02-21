@@ -16,12 +16,11 @@ let designsSchema = new mongoose.Schema(
 
   { panel_title: String,panel_body: Object},
   { panel_title: String,panel_body: Object},
-  
+
   { panel_title: String,panel_body: Object},
 
   { panel_title: String,panel_body: Object},
   { panel_title: String,panel_body: Object}
-
 
  ]
 	);
@@ -43,7 +42,7 @@ module.exports = {
 		});
 	},
 	//进行数据库中的内容进行查找
-	"find":function(func){
+	"find":function(request,response,func){
 		designsModel.findOne((err,data)=>{
 			if(err){
 				func(data);

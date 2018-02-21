@@ -2,7 +2,11 @@
 const fs = require("fs");
 const url = require("url");
 const querystring = require("querystring");
+// const getDesignsInfo = require("./js/getDesignsInfo");
+
 module.exports = {
+
+
 	"html":function(filename,request,response){
 		//是html文件进行寻找文件然后返回给浏览器
 		fs.readFile(filename,"utf8",(error,data)=>{
@@ -11,6 +15,7 @@ module.exports = {
 			response.write(data,"utf8");
 			response.end();
 		});
+
 	},
 	"css":function(filename,request,response){
 		//是html文件进行寻找文件然后返回给浏览器
@@ -30,6 +35,25 @@ module.exports = {
 			response.write(data);
 			response.end();
 		});
+
+		// switch(filename){
+
+		// 	//请求节点的增加的处理
+		// 	case "js/index.js":{
+		// 		getDesignsInfo(request,response);
+		// 	}break;
+		// 	case "js/jquery-1.8.3.min.js":{
+		// 		//是js文件进行寻找文件然后返回给浏览器
+		// 		fs.readFile(filename,(error,data)=>{
+		// 			response.statusCode = 200;
+		// 			response.setHeader("Content-type","application/x-javascript");
+		// 			response.write(data);
+		// 			response.end();
+		// 		});
+		// 	}break;
+
+			
+		// }
 	},
 
 	"do":function(filename,request,response){
@@ -70,14 +94,27 @@ module.exports = {
 		});
 
 	}
-
-
-
-
-
-
-
 }
+
+/**
+ * 处理节点的增加的请求
+ * @param  {[type]} request  [description]
+ * @param  {[type]} response [description]
+ * @return {[type]}          [description]
+ */
+
+// function index(request,response){
+
+
+// 		response.statusCode = 200;
+// 		response.setHeader("Content-type","application/x-javascript");
+// 		response.write(data);
+// 		response.end();
+
+
+
+
+// }
 
 function reg(request,response){
 	//1、接受前端传输过来的数据
