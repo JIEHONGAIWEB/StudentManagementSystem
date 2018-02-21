@@ -9,26 +9,31 @@ html, body {
   height: 100%; }
 
 header {
-  height: 83px;
+  height: 80px;
   width: 1112px;
-  margin: 0 auto;
-  background: pink; }
+  margin: 0 auto; }
   header .top_left {
     float: left;
-    height: 83px;
-    line-height: 83px;
-    text-align: center; }
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    margin-right: 20px; }
     header .top_left img {
-      height: 46px;
       width: 182px;
       vertical-align: middle; }
   header .top_center {
     float: left;
-    height: 83px;
-    line-height: 83px; }
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+    color: #171717;
+    font-weight: 400; }
     header .top_center li {
+      padding: 0 12px;
       float: left;
-      line-height: 83px; }
+      line-height: 80px; }
+      header .top_center li i {
+        margin: 0 10px; }
     header .top_center li:nth-child(1):after {
       content: "\e917";
       font-family: strawberryicon;
@@ -45,5 +50,44 @@ header {
       font-size: 10px; }
   header .top_right {
     float: right;
-    height: 83px;
-    line-height: 83px; }
+    height: 80px;
+    line-height: 80px; }
+
+.slide {
+  background: green;
+  width: 1114px;
+  margin: 0 auto;
+  height: 400px; }
+
+.setting {
+  background: yellow;
+  width: 1114px;
+  margin: 0 auto;
+  height: 52px; }
+
+.intro_3 {
+  background: red;
+  width: 1114px;
+  height: 260px;
+  margin: 0 auto; }
+
+.three {
+  background: #efefef;
+  width: 100%;
+  overflow: hidden; }
+  .three .intro {
+    width: 1114px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto; }
+    .three .intro .intro_left {
+      background: blue;
+      width: 713px;
+      margin: 30px auto;
+      height: 2000px; }
+    .three .intro .intro_right {
+      background: yellow;
+      width: 344px;
+      margin: 30px auto;
+      height: 2000px; }

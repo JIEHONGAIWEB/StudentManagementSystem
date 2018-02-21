@@ -3,6 +3,7 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
+var session = require('express-session');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
@@ -11,6 +12,10 @@ var designs = require('./routes/designs');
 var develops = require('./routes/develops');
 var operates = require('./routes/operates');
 var products = require('./routes/products');
+var reg = require('./routes/reg');
+var login = require('./routes/login');
+
+
 
 
 
@@ -18,7 +23,7 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -27,13 +32,20 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(session({
+    secret: 'recommend 128 bytes random string',
+    cookie: { maxAge: 20 * 60 * 1000 },
+    resave: true,
+    saveUninitialized: true
+}));
 app.use('/', index);
 app.use('/designs', designs);
 app.use('/develops', develops);
 app.use('/operates', operates);
 app.use('/products', products);
 
+app.use('/reg', reg);
+app.use('/login', login);
 
 app.use('/users', users);
 

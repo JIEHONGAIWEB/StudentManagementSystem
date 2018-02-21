@@ -5,18 +5,18 @@ const chuangzaoshi = mongoose.createConnection("localhost","chuangzaoshi");
 //模板的创建非常的重要，应该怎么创建？？
 
 let designsSchema = new mongoose.Schema(
-[ { panel_title: String,panel_body: Object},
-  { panel_title: String,panel_body: Object},
+[ { panel_title: String,panel_icon: String,panel_body: Object},
+	
+  { panel_title: String,panel_icon: String,panel_body: Object},
 
-  { panel_title: String,panel_body: Object},
-  { panel_title: String,panel_body: Object},
+  { panel_title: String,panel_icon: String,panel_body: Object},
+  { panel_title: String,panel_icon: String,panel_body: Object},
 
-  { panel_title: String,panel_body: Object},
-  { panel_title: String,panel_body: Object},
+  { panel_title: String,panel_icon: String,panel_body: Object},
+  { panel_title: String,panel_icon: String,panel_body: Object},
 
-  { panel_title: String,panel_body: Object},
-  
-  { panel_title: String,panel_body: Object}
+  { panel_title: String,panel_icon: String,panel_body: Object},
+  { panel_title: String,panel_icon: String,panel_body: Object}
 
  ]
 	);

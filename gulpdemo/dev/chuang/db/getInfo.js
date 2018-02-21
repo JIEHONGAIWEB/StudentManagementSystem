@@ -9,7 +9,7 @@ const http = require("http");
 const cheerio = require("cheerio");
 const designsDbConne = require("./designsDbConne");
 
-http.get("http://www.chuangzaoshi.com/operate",(res)=>{
+http.get("http://chuangzaoshi.com/operate",(res)=>{
 
 	let html ='';
 
@@ -31,7 +31,7 @@ http.get("http://www.chuangzaoshi.com/operate",(res)=>{
 		 * 数据库的连接并且进行数据的添加
 		 * 1:这部分的操作是在getInfo()函数调用完成后得到数据，才能给数据库添加数据
 		*/
-		 dbconne.add(parentStr,function(isSuccess){
+		 designsDbConne.add(parentStr,function(isSuccess){
 				if(isSuccess){
 					console.log("添加成功！");
 				}else{
@@ -108,6 +108,7 @@ function getInfo(html){
 		 */
 		let panel = {
 			"panel_title":"",
+			"panel_icon":"",
 			"panel_body":[]
 		};
 	/**
@@ -116,6 +117,8 @@ function getInfo(html){
 		//单个的标签分类
 		let titleTemp = $(".panel-title").eq(i).text();
 		panel.panel_title =  kongge(titleTemp);
+		let iconTemp = $("i").eq(i).attr("class");
+		panel.panel_icon =  kongge(iconTemp);
 		
 	/**
 	 * 二:第二大部分

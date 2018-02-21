@@ -37,18 +37,21 @@ body{
 	flex-direction:column;
 	background:#fff;
 	overflow-y:auto;
-
+	i{
+		font-size:12px;
+		}
 	.card{
-		width:761px;
+		flex:1;
+		width:100%;
 		height:auto;
 		background:#f9f9f9;
 		margin:20px auto;
 		border-radius:5px;
 		text-align:center;
-
+		
 		.cell_4{
 			float:left;
-			width:100%;
+			width:98%;
 			height:102px;
 			line-height:102px;
 			margin:1%;
@@ -63,50 +66,65 @@ body{
 				border-radius:50%;
 				left:20px;
 				top:10px;
-
 			}
 			span:nth-child(2){
 				vertical-align:middle;
 				position:absolute;
 				left:67px;
-				top:20px;
+				top:10px;
 				height:32px;
 				line-height:32px;
 				font-size:15px;
+				font-weight:700;
 			}
+			span:nth-child(2):hover{
+				color:#38B7EA;
+
+			}
+
 			p:nth-child(3){
 				font-size:12px;
 				display:inline-block;
 				width:100%;
+				margin: 0 auto;
 				line-height:32px;
 				text-align:center;
 				position:absolute;
-				top:50px;
-				left:20px;
+				top:40px;
+				left:0px;
+				color:#666666;
 			}
 			span:nth-child(4){
 				font-size:12px;
 				line-height:32px;
 				position:absolute;
-				top:75%;
-				left:20%;
+				top:65%;
+				left:10%;
+				color:#BBBBBB;
+				
 			}
+
 			span:nth-child(5){
-				font-size:12px;
+				font-size:14px;
 				line-height:32px;
 				position:absolute;
-				top:75%;
-				left:75%;
+				top:65%;
+				left:65%;
+
 			}
+
 		}
 		.cell_4:hover{
 			transition:all 500ms;
-			box-shadow:2px 2px 2px #f2f2f2;
+			box-shadow:4px 4px 2px #f2f2f2,-2px -2px 2px #f2f2f2;
 		}
 	}
 	.nav-bar{
 		width:761px;
 		height:57px;
+		line-height:57px;
+		padding-left:20px;
+		
 		border:1px solid #f6f6f6;
 		margin:32px auto 55px;
 		border-radius:5px;

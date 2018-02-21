@@ -9,23 +9,24 @@ const chuangzaoshi = mongoose.createConnection("localhost","chuangzaoshi");
 
 let designsSchema = new mongoose.Schema(
 	//json数组的格式
-[ { panel_title: String,panel_body: Object},
+[ { panel_title: String,panel_icon: String,panel_body: Object},
 	
-  { panel_title: String,panel_body: Object},
+  { panel_title: String,panel_icon: String,panel_body: Object},
 
-  { panel_title: String,panel_body: Object},
-  { panel_title: String,panel_body: Object},
+  { panel_title: String,panel_icon: String,panel_body: Object},
+  { panel_title: String,panel_icon: String,panel_body: Object},
 
-  { panel_title: String,panel_body: Object},
-  { panel_title: String,panel_body: Object},
+  { panel_title: String,panel_icon: String,panel_body: Object},
+  { panel_title: String,panel_icon: String,panel_body: Object},
 
-  { panel_title: String,panel_body: Object},
-  { panel_title: String,panel_body: Object},
+  { panel_title: String,panel_icon: String,panel_body: Object},
 
-  { panel_title: String,panel_body: Object},
+  { panel_title: String,panel_icon: String,panel_body: Object},
+  { panel_title: String,panel_icon: String,panel_body: Object},
 
-  { panel_title: String,panel_body: Object},
-  { panel_title: String,panel_body: Object}
+
+  { panel_title: String,panel_icon: String,panel_body: Object},
+  { panel_title: String,panel_icon: String,panel_body: Object}
 
  ]
 	);
