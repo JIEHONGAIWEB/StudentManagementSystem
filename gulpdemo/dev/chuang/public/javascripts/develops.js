@@ -21,6 +21,19 @@ function getInfo(data){
 		$(".leftUl1").text("前端 Develop");
 		$(".leftUl2").text("产品 Product");
 		$(".leftUl3").text("运营 Operate");
+		$(".leftUl0").click(function(){
+			window.location.href = "index.html";
+		});
+		$(".leftUl1").click(function(){
+			window.location.href = "develops.html";
+		});
+		$(".leftUl2").click(function(){
+			window.location.href = "products.html";
+		});
+		$(".leftUl3").click(function(){
+			window.location.href = "operates.html";
+		});
+
 		
 	for(let i=0;i<11;i++){
 			// 读取到了panel.title的数据

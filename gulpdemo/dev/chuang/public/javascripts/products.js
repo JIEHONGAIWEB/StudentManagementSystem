@@ -20,6 +20,20 @@ function getInfo(data){
 		$(".leftUl1").text("前端 Develop");
 		$(".leftUl2").text("产品 Product");
 		$(".leftUl3").text("运营 Operate");
+
+		$(".leftUl0").click(function(){
+			window.location.href = "index.html";
+		});
+		$(".leftUl1").click(function(){
+			window.location.href = "develops.html";
+		});
+		$(".leftUl2").click(function(){
+			window.location.href = "products.html";
+		});
+		$(".leftUl3").click(function(){
+			window.location.href = "operates.html";
+		});
+
 	//2、右边的内容区域的显示
 	for(let i=0;i<8;i++){
 			// 读取到了panel.title的数据
@@ -83,6 +97,9 @@ function getInfo(data){
 			$icon2.attr("class",data[i+1]["panel_icon"].slice(3));
 			
 		}
+		$(".leftUl2").css({
+			
+		});
 
 }
 

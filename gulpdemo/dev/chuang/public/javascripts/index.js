@@ -21,6 +21,7 @@ $.ajax({
 		for(let i = 0 ;i<4;i++){
 
 			let $leftUl = $("<ul></ul>");
+
 			$(".left_nav").append($leftUl);
 			$leftUl.attr("class","leftUl"+i);
 
@@ -30,6 +31,18 @@ $.ajax({
 		$(".leftUl2").text("产品 Product");
 		$(".leftUl3").text("运营 Operate");
 
+		$(".leftUl0").click(function(){
+			window.location.href = "index.html";
+		});
+		$(".leftUl1").click(function(){
+			window.location.href = "develops.html";
+		});
+		$(".leftUl2").click(function(){
+			window.location.href = "products.html";
+		});
+		$(".leftUl3").click(function(){
+			window.location.href = "operates.html";
+		});
 
 	//2:循环生成右边内容标签
 		for(let i=0;i<11;i++){
@@ -91,10 +104,12 @@ $.ajax({
 			$(".leftUl0").find("li").eq(i).text(data[i]["panel_title"]);
 
 			$leftLi.prepend($icon2);
-			$icon2.attr("class",data[i+1]["panel_icon"].slice(3));
-			
+			$icon2.attr("class",data[i+1]["panel_icon"].slice(3));	
 
 		}
-
+		//	5:左边导航栏的跳转
+		
+		
 
 }
+
