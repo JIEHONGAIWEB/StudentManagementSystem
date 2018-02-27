@@ -25,7 +25,9 @@ router.post('/', function(req, res, next) {
 			//6:给客户端进行添加cookie
 			res.cookie("username", username);
 
-			res.redirect('index.html');
+			console.log(req.session.username);
+			
+			res.redirect('designs.html');
 		}else{
 		//4:数据添加不成功的话,跳转到注册的页面，并且提示重新注册
 			alert("登录失败");

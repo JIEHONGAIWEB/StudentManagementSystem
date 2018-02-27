@@ -3,6 +3,8 @@
  * 我的每一个页面发送的是ajax请求，从我的数据库中要东西。
  */
 
+
+
 $.ajax({
 	"url":"designs",
 	"dataType":"json",
@@ -32,7 +34,7 @@ $.ajax({
 		$(".leftUl3").text("运营 Operate");
 
 		$(".leftUl0").click(function(){
-			window.location.href = "index.html";
+			window.location.href = "designs.html";
 		});
 		$(".leftUl1").click(function(){
 			window.location.href = "develops.html";
@@ -55,6 +57,10 @@ $.ajax({
 				$ulDom.append($h6Dom);
 				$h6Dom.text(data[i]["panel_title"]);
 				
+				$(".card").on("mouseover",function(){
+					 $(this).css("background","#f9f9f9");
+				});
+
 				
 				//3:读取到了panel.body的长度
 				// console.log(data[i]["panel_body"].length);	
@@ -107,7 +113,8 @@ $.ajax({
 			$icon2.attr("class",data[i+1]["panel_icon"].slice(3));	
 
 		}
-		//	5:左边导航栏的跳转
+
+
 		
 		
 

@@ -6,7 +6,6 @@ $.ajax({
 	"success":function(data){
 		getInfo(data);
 	}
-
 });
 
 //数据获取完毕
@@ -21,8 +20,9 @@ function getInfo(data){
 		$(".leftUl1").text("前端 Develop");
 		$(".leftUl2").text("产品 Product");
 		$(".leftUl3").text("运营 Operate");
+
 		$(".leftUl0").click(function(){
-			window.location.href = "index.html";
+			window.location.href = "designs.html";
 		});
 		$(".leftUl1").click(function(){
 			window.location.href = "develops.html";
@@ -45,6 +45,11 @@ function getInfo(data){
 			$ulDom.append($h6Dom);
 
 			$h6Dom.text(data[i]["panel_title"]);
+			
+			//局部作用域中有效
+			$(".card").on("mouseover",function(){
+				 $(this).css("background","#f9f9f9");
+			});
 			
 			//读取到了panel.body的长度
 			// console.log(data[i]["panel_body"].length);	

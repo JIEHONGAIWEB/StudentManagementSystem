@@ -22,7 +22,7 @@ function getInfo(data){
 		$(".leftUl3").text("运营 Operate");
 
 		$(".leftUl0").click(function(){
-			window.location.href = "index.html";
+			window.location.href = "designs.html";
 		});
 		$(".leftUl1").click(function(){
 			window.location.href = "develops.html";
@@ -43,8 +43,11 @@ function getInfo(data){
 			
 			$h6Dom = $("<h6></h6>");
 			$ulDom.append($h6Dom);
-
 			$h6Dom.text(data[i]["panel_title"]);
+
+			$(".card").on("mouseover",function(){
+				 $(this).css("background","#f9f9f9");
+			});
 			
 			//读取到了panel.body的长度
 			// console.log(data[i]["panel_body"].length);	

@@ -6,7 +6,6 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 
-var index = require('./routes/index');
 var users = require('./routes/users');
 var designs = require('./routes/designs');
 var develops = require('./routes/develops');
@@ -14,6 +13,9 @@ var operates = require('./routes/operates');
 var products = require('./routes/products');
 var reg = require('./routes/reg');
 var login = require('./routes/login');
+var designsHtml = require('./routes/designsHtml');
+
+
 
 
 
@@ -38,16 +40,21 @@ app.use(session({
     resave: true,
     saveUninitialized: true
 }));
-app.use('/', index);
+
+
+//处理请求
 app.use('/designs', designs);
 app.use('/develops', develops);
 app.use('/operates', operates);
 app.use('/products', products);
 
+//注册以及登录
 app.use('/reg', reg);
 app.use('/login', login);
 
 app.use('/users', users);
+
+app.use('/designs.html', designsHtml);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
