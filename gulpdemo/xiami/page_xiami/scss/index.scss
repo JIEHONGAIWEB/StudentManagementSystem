@@ -1,0 +1,172 @@
+body, div, p, ul, ol, li, dl, dt, dd, table, tr, td, th, form, h1, h2, h3, h4, h5, h6, fieldset, figure, hr, img, input {
+  margin: 0;
+  padding: 0; 
+ }
+html,body{
+	width:100%;
+	height:100%;
+}
+html{
+	font-size:26.66vw;
+}
+body{
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-betwen;
+}
+
+
+//顶部的部分
+.header{
+	height:auto;
+	width:100%;
+	padding-top:0.4rem;
+	.search_top{
+		height:0.43rem;
+		line-height:0.43rem;
+		width:100%;
+		background:yellow;
+		font-size:0.08rem;
+		i{
+			
+			color:black;
+		}
+		#search{
+		 border-style:none;
+		}
+
+	}
+}
+
+.content{
+	flex:1;
+	height:auto;
+	overflow-y:auto;
+	width:100%;
+
+	.slide_top{
+		height:1.20rem;
+		width:100%;
+		background:red;
+	}
+	.nav_icon{
+		height:0.8rem;
+		width:100%;
+		background:pink;
+
+	}
+	.recommend_diff{
+		height:1.2rem;
+		width:100%;
+		background:purple;
+	}
+	.top_line{
+		height:0.6rem;
+		width:100%;
+		background:blue;
+		margin:0.06rem 0;
+	}
+	.part_six{
+		.title{
+				height:0.66rem;
+				line-height:0.66rem;
+				font-size:0.08rem;
+				color:red;
+				background:white;
+			}
+		//第一部分
+		.six_part_one{
+			
+			.song_sheet_content{
+				height:3.9rem;
+				background:black;
+				margin-bottom:0.08rem;
+			}
+			
+		}
+		//第二部分
+		.six_part_two{
+			
+			.song_content{
+				height:3.9rem;
+				background:black;
+				margin-bottom:0.08rem;
+			}
+			
+		}
+
+		//第三部分
+		.six_part_three{
+			
+			.song_content{
+				height:3.9rem;
+				background:black;
+				margin-bottom:0.08rem;
+			}
+			
+		}
+		//第四部分
+		.six_part_four{
+			
+			.song_content{
+				height:3.9rem;
+				background:black;
+				margin-bottom:0.08rem;
+			}
+			
+		}
+		//第五部分
+		.six_part_five{
+			
+			.song_content{
+				height:3.9rem;
+				background:black;
+				margin-bottom:0.08rem;
+			}
+			
+		}
+		//第六部分
+		.six_part_six{
+			
+			.song_content{
+				height:3.9rem;
+				background:black;
+				margin-bottom:0.08rem;
+			}
+			
+		}
+		//第七部分
+		.six_part_seven{
+			
+			.song_content{
+				height:3.8rem;
+				background:black;
+				margin-bottom:0.08rem;
+			}
+			
+		}
+		//第八部分
+		.six_part_eight{
+			
+			.song_content{
+				height:3.9rem;
+				background:black;
+				margin-bottom:0.08rem;
+			}
+			
+		}
+
+	}
+	
+}
+
+
+.footer{
+
+	height:0.48rem;
+	width:100%;
+	font-size:0.08rem;
+	background:orange;
+}
+

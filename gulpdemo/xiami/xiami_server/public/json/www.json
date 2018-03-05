@@ -1,0 +1,9 @@
+https://sync.itunes.apple.com:443
+
+
+GET /545/79545/2102872229/1796874099_1508414958206.mp3?auth_key=1520478000-0-0-ad0efbb462183a4e728054b4e109231f HTTP/1.1
+User-Agent: xiami mobile /iphone 6.7.8 rv:6.7.8.2 (iPhone; iOS 11.2.6; en_CN)
+Host: m320.xiami.net
+Connection: keep-alive
+
+
